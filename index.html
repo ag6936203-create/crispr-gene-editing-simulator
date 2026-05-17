@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISPR-Cas9 Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f0f8ff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .status {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CRISPR-Cas9 Gene Editing Simulator</h1>
+        <p>Welcome to the CRISPR-Cas9 simulation tool!</p>
+        <div class="status">
+            <p><strong>Status:</strong> Simulator is loading...</p>
+            <p>Please wait while the 3D model initializes.</p>
+        </div>
+        <div id="simulator-container">
+            <!-- Здесь будет отображаться 3D-модель ДНК -->
+            <p style="color: #7f8c8d;">3D model will appear here</p>
+        </div>
+        <div style="margin-top: 30px;">
+            <button onclick="alert('PAM sequence selected: NGG')" style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">Select PAM Sequence</button>
+            <button onclick="alert('Simulation started!')" style="padding: 10px 20px; background: #2ecc71; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Start Simulation</button>
+        </div>
+    </div>
+</body>
+</html>
